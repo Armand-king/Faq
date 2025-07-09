@@ -1,0 +1,104 @@
+/* --------------------------------------------------------------
+   BODY
+   Style général du body : police, fond, couleur du texte
+-------------------------------------------------------------- */
+body {
+  font-family: Arial, sans-serif;           /* Police sans-serif pour une lecture facile */
+  background-color: #ffffff;                 /* Couleur de fond gris très clair pour contraster avec le bloc blanc */
+  color: #ffffff;                              /* Couleur du texte en gris foncé (plus doux que noir pur) */
+  margin:0;                             /* Supprime la marge par défaut du navigateur */
+  padding: 0;                               /* Supprime le padding par défaut du navigateur */
+}
+
+/* --------------------------------------------------------------
+   FAQ CONTAINER
+   Conteneur principal centré avec une largeur maximale
+-------------------------------------------------------------- */
+.faq-container {
+  max-width: 800px;                         /* Largeur maximale du bloc pour rester lisible même sur grand écran */
+  margin: 90px auto;                        /* Centre horizontalement (auto) et ajoute 50px en haut et en bas */
+  padding: 29px;                            /* Espace intérieur pour que le texte ne colle pas aux bords */
+  background-color: #fff;                   /* Fond blanc pour contraster avec le fond général gris clair */
+}
+
+/* --------------------------------------------------------------
+   TITRE PRINCIPAL (H1)
+   Style du gros titre en haut de la page
+-------------------------------------------------------------- */
+h1 {
+  text-align: center;                       /* Centre le titre horizontalement */
+  font-size: 2rem;                          /* Taille de police grande pour la hiérarchie visuelle */
+  margin-bottom: 0.5rem;                    /* Petit espace après le titre pour séparer du sous-titre */
+  line-height: 1.6;    /* Interligne plus grand pour la lisibilité */
+
+}
+
+/* --------------------------------------------------------------
+   SOUS-TITRE
+   Texte sous le H1, plus léger et espacé
+-------------------------------------------------------------- */
+.subtitle {
+  text-align: center;                       /* Centre le sous-titre comme le H1 */
+  color: #666;                              /* Gris moyen, moins accentué que le titre */
+  margin-bottom: 2rem;                      /* Gros espace avant la section FAQ */
+}
+
+/* --------------------------------------------------------------
+   FAQ ITEM
+   Bloc individuel pour chaque question-réponse
+-------------------------------------------------------------- */
+.faq-item {
+  margin-bottom: 3rem;                      /* Grand espace sous chaque bloc FAQ pour bien les séparer */
+  border-top: 1px solid #ddd;               /* Ligne grise discrète au-dessus pour délimiter visuellement */
+  padding-top: 2rem;                        /* Espace interne en haut du bloc après la bordure */
+}
+
+/* --------------------------------------------------------------
+   TITRES DES QUESTIONS (H2)
+   Style des questions elles-mêmes
+-------------------------------------------------------------- */
+.faq-item h2 {
+  font-size: 1.5rem;                        /* Un peu plus petit que H1 mais toujours gros pour attirer l'œil */
+  margin-bottom: 1rem;                      /* Espace après la question avant le texte de réponse */
+  color: #111;                              /* Presque noir pour bien ressortir */
+}
+
+/* --------------------------------------------------------------
+   PARAGRAPHES DANS LES FAQ
+   Style des réponses en texte normal
+-------------------------------------------------------------- */
+.faq-item p {
+  line-height: 1.6;    /* Interligne plus grand pour la lisibilité */
+  margin-bottom: 1rem;                      /* Espace entre les paragraphes ou avant les listes */
+}
+
+/* --------------------------------------------------------------
+   LISTES NUMÉROTÉES OU À PUCE
+   Style des listes dans les réponses
+-------------------------------------------------------------- */
+.faq-item ol,
+.faq-item ul { 
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1rem;/* Espace sous la liste avant le prochain paragraphe */
+  line-height: 2;    /* Interligne plus grand pour la lisibilité */
+
+}
+
+/* --------------------------------------------------------------
+   LIENS
+   Style général des liens dans la page
+-------------------------------------------------------------- */
+a {
+  color: #3366cc;                           /* Bleu classique pour signaler un lien cliquable */
+  text-decoration: none;                    /* Retire le soulignement par défaut */
+}
+
+/* --------------------------------------------------------------
+   LIENS AU SURVOL
+   Effet visuel au hover pour signaler l'interaction
+-------------------------------------------------------------- */
+a:hover {
+  text-decoration: underline;               /* Remet le soulignement au hover pour montrer que c'est interactif */
+}
